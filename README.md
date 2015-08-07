@@ -2,7 +2,8 @@
 UITextField extension in Swift that adds shake animation
 
 Initially created by Andrea Mazzini (using Objective-C) on 08/02/14: https://github.com/andreamazz/UITextField-Shake
-and then translated by myself from Objective-C to Swift.
+
+Translated by myself from Objective-C to Swift and provided to you on this repository.
 
 ##How to import the framework
 
