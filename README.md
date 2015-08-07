@@ -11,7 +11,7 @@ Translated by myself from Objective-C to Swift and provided to you on this repos
 
 - Then click on your app's target and drag and drop the framework on General > Embedded Binaries tab.
 
-- Finally import ```UITextFieldShakeSwift.h``` in your controller's header file, or ```UITextFieldShakeSwift``` if you are using the `use_frameworks!` directive.
+- Finally import ```UITextField_Shake_Swift``` in your project, using the `use_frameworks!` directive in your Podfile.
 
 ##Usage
 
