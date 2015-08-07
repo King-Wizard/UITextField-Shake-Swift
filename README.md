@@ -1,7 +1,16 @@
 # UITextField-Shake-Swift
 UITextField extension in Swift that adds shake animation
 
-Import ```UITextFieldShakeSwift.h``` in your controller's header file, or ```UITextFieldShakeSwift``` if you are using the `use_frameworks!` directive.
+Initially created by Andrea Mazzini (using Objective-C) on 08/02/14: https://github.com/andreamazz/UITextField-Shake
+and then translated by myself from Objective-C to Swift.
+
+##How to import the framework
+
+- Copy paste the framework to your project.
+
+- Then click on your app's target and drag and drop the framework on General > Embedded Binaries tab.
+
+- Finally import ```UITextFieldShakeSwift.h``` in your controller's header file, or ```UITextFieldShakeSwift``` if you are using the `use_frameworks!` directive.
 
 ##Usage
 
