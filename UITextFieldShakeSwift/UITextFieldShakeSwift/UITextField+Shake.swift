@@ -41,6 +41,10 @@ public extension UITextField {
         self.shake(10, withDelta: 5, completion: nil)
     }
     
+    func yo() {
+        println("Bouboux")
+    }
+    
     /** Shake the UITextField
     *
     * Shake the text field a given number of times

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "UITextField-Shake-Swift"
-  s.version      = "0.0.2"
+  s.version      = "1.0"
   s.summary      = "UITextField extension in Swift that adds shake animation"
 
   s.description  = <<-DESC
