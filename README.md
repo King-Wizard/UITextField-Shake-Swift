@@ -5,13 +5,26 @@ Initially created by Andrea Mazzini (using Objective-C) on 08/02/14: https://git
 
 Translated by myself from Objective-C to Swift and provided to you on this repository.
 
-##How to import the framework
+##Setup with Cocoapods
 
-- Copy paste the framework to your project.
+Add the instructions below to your Podfile:
 
-- Then click on your app's target and drag and drop the framework on General > Embedded Binaries tab.
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.4'
+use_frameworks!
 
-- Finally import ```UITextField_Shake_Swift``` in your project, using the `use_frameworks!` directive in your Podfile.
+pod 'UITextField-Shake-Swift', '>= 1.0'
+```
+
+- Finally add ```import UITextField_Shake_Swift``` at the top of your Swift class.
+
+- Compile and run and you will be good to go.
+
+
+##How to manually import the framework
+
+- Just drag and drop UITextField+Shake.swift file into your Xcode project and do not forget to check the checkbox entitled "Copy items if needed" and the appropriate checkboxe(s) in "Add to targets" section.
 
 ##Usage
 
