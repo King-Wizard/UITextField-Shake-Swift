@@ -2,8 +2,8 @@
 All notable changes to this project will be documented in this file.
 `UITextField-Shake-Swift` adheres to [Semantic Versioning](http://semver.org/).
 
-- `1.0.x` Releases - [1.0](#11) | [1.0.1](#111)
-- `0.0.x` Releases - [0.0](#10)
+- `1.0.x` Releases - [1.0](#10) | [1.0.1](#101)
+- `0.0.x` Releases - [0.0](#00)
 
 ---
 
