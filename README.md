@@ -24,7 +24,7 @@ pod 'UITextField-Shake-Swift', '>= 1.0'
 
 ##Otherwise you can also manually import the framework
 
-Just drag and drop UITextField+Shake.swift file into your Xcode project and do not forget to check the checkbox entitled "Copy items if needed" and the appropriate checkboxe(s) in "Add to targets" section.
+Just drag and drop ```UITextFieldShakeSwift/UITextFieldShakeSwift/UITextField+Shake.swift``` file into your Xcode project and do not forget to check the checkbox entitled "Copy items if needed" and the appropriate checkboxe(s) in "Add to targets" section.
 
 ##Usage
 
