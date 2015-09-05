@@ -2,17 +2,20 @@
 //  UITextField+Shake.swift
 //  UITextFieldShakeSwift
 //
+//  UITextFieldShakeSwift version 1.0.2
+//
 //  Initially created by Andrea Mazzini (using Objective-C) on 08/02/14.
-//  Translated from Objective-C to Swift by King-Wizard
-//  Copyright (c) 2015 Xylon. All rights reserved.
+//  Translated from Objective-C to Swift by King-Wizard on 09/05/15.
+//  Copyright (c) 2015 King-Wizard. All rights reserved.
 //
 
 import UIKit
 import Foundation
 
-/** @enum ShakeDirection
-*
-* Enum that specifies the direction of the shake
+/** 
+ @enum ShakeDirection
+
+ Enum that specifies the direction of the shake
 */
 public enum ShakeDirection : Int {
     case Horizontal = 0
@@ -26,40 +29,39 @@ Build your own Cocoa Touch Frameworks, in pure Swift: http://bit.ly/1gNLyZ8
 
 Deleting contents from Xcode Derived data folder: http://bit.ly/1ItWqSo
 */
+
 public extension UITextField {
     
-    /**-----------------------------------------------------------------------------
-    * @name UITextField+Shake
-    * -----------------------------------------------------------------------------
-    */
+    /**
+     Shake the UITextField.
     
-    /** Shake the UITextField
-    *
-    * Shake the text field with default values
+     Shake the text field with default values.
     */
     func shake() {
         self.shake(10, withDelta: 5, completion: nil)
     }
     
-    /** Shake the UITextField
-    *
-    * Shake the text field a given number of times
-    *
-    * @param times The number of shakes
-    * @param delta The width of the shake
+    /**
+     Shake the UITextField.
+    
+     Shake the text field a given number of times.
+    
+     :param: times The number of shakes.
+     :param: delta The width of the shake.
     */
     func shake(let times: Int,
         let withDelta delta: CGFloat) {
             self.shake(times, withDelta: delta, completion: nil)
     }
     
-    /** Shake the UITextField
-    *
-    * Shake the text field a given number of times
-    *
-    * @param times The number of shakes
-    * @param delta The width of the shake
-    * @param handler A block object to be executed when the shake sequence ends
+    /** 
+     Shake the UITextField.
+    
+     Shake the text field a given number of times.
+    
+     :param: times The number of shakes.
+     :param: delta The width of the shake.
+     :param: handler A block object to be executed when the shake sequence ends.
     */
     func shake(let times: Int,
         let withDelta delta: CGFloat,
@@ -67,13 +69,14 @@ public extension UITextField {
             self._shake(times, direction: 1, currentTimes: 0, withDelta: delta, speed: 0.03, shakeDirection: ShakeDirection.Horizontal, completion: handler)
     }
     
-    /** Shake the UITextField at a custom speed
-    *
-    * Shake the text field a given number of times with a given speed
-    *
-    * @param times The number of shakes
-    * @param delta The width of the shake
-    * @param interval The duration of one shake
+    /** 
+     Shake the UITextField at a custom speed.
+    
+     Shake the text field a given number of times with a given speed.
+    
+     :param: times The number of shakes.
+     :param: delta The width of the shake.
+     :param: interval The duration of one shake.
     */
     func shake(let times: Int,
         let withDelta delta: CGFloat,
@@ -81,14 +84,15 @@ public extension UITextField {
             self.shake(times, withDelta: delta, speed: interval, completion: nil)
     }
     
-    /** Shake the UITextField at a custom speed
-    *
-    * Shake the text field a given number of times with a given speed
-    *
-    * @param times The number of shakes
-    * @param delta The width of the shake
-    * @param interval The duration of one shake
-    * @param handler A block object to be executed when the shake sequence ends
+    /** 
+     Shake the UITextField at a custom speed.
+    
+     Shake the text field a given number of times with a given speed.
+    
+     :param: times The number of shakes.
+     :param: delta The width of the shake.
+     :param: interval The duration of one shake.
+     :param: handler A block object to be executed when the shake sequence ends.
     */
     func shake(let times: Int,
         let withDelta delta: CGFloat,
@@ -97,14 +101,15 @@ public extension UITextField {
             self._shake(times, direction: 1, currentTimes: 0, withDelta: delta, speed: interval, shakeDirection: ShakeDirection.Horizontal, completion: handler)
     }
     
-    /** Shake the UITextField at a custom speed
-    *
-    * Shake the text field a given number of times with a given speed
-    *
-    * @param times The number of shakes
-    * @param delta The width of the shake
-    * @param interval The duration of one shake
-    * @param direction of the shake
+    /** 
+     Shake the UITextField at a custom speed.
+    
+     Shake the text field a given number of times with a given speed.
+    
+     :param: times The number of shakes.
+     :param: delta The width of the shake.
+     :param: interval The duration of one shake.
+     :param: direction of the shake.
     */
     func shake(let times: Int,
         let withDelta delta: CGFloat,
@@ -113,15 +118,16 @@ public extension UITextField {
             self.shake(times, withDelta: delta, speed: interval, shakeDirection: shakeDirection, completion: nil)
     }
     
-    /** Shake the UITextField at a custom speed
-    *
-    * Shake the text field a given number of times with a given speed
-    *
-    * @param times The number of shakes
-    * @param delta The width of the shake
-    * @param interval The duration of one shake
-    * @param direction of the shake
-    * @param handler A block object to be executed when the shake sequence ends
+    /** 
+     Shake the UITextField at a custom speed.
+    
+     Shake the text field a given number of times with a given speed.
+    
+     :param: times The number of shakes.
+     :param: delta The width of the shake.
+     :param: interval The duration of one shake.
+     :param: direction of the shake.
+     :param: handler A block object to be executed when the shake sequence ends.
     */
     func shake(let times: Int,
         let withDelta delta: CGFloat,
