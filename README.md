@@ -1,4 +1,4 @@
-# UITextField-Shake-Swift
+# UITextField-Shake-Swift [![CI Status](http://img.shields.io/travis/King-Wizard/UITextField-Shake-Swift.svg?style=flat)](https://travis-ci.org/King-Wizard/UITextField-Shake-Swift)
 UITextField extension in Swift that adds shake animation
 
 Initially created by Andrea Mazzini (using Objective-C) on 08/02/14: https://github.com/andreamazz/UITextField-Shake

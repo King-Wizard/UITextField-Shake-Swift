@@ -1,0 +1,25 @@
+# http://docs.travis-ci.com/user/languages/objective-c/
+# https://github.com/facebook/xctool
+
+language: objective-c
+
+osx_image: xcode7
+
+script:
+ 
+  xctool
+  -project UITextFieldShakeSwift/UITextFieldShakeSwift.xcodeproj
+  -scheme UITextFieldShakeSwiftTests
+  -sdk iphonesimulator
+  build 
+  test
+  ONLY_ACTIVE_ARCH=NO
+  CODE_SIGN_IDENTITY=""
+  CODE_SIGNING_REQUIRED=NO
+
+notifications:
+  email: false
+
+before_install:
+  - brew update
+  - brew uninstall xctool && brew install --HEAD xctool
