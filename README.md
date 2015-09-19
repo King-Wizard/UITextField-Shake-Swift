@@ -14,7 +14,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.4'
 use_frameworks!
 
-pod 'UITextField-Shake-Swift', '>= 1.0.1'
+pod 'UITextField-Shake-Swift', '>= 1.0.3'
 ```
 
 - Then add ```import UITextField_Shake_Swift``` at the top of your Swift class.
