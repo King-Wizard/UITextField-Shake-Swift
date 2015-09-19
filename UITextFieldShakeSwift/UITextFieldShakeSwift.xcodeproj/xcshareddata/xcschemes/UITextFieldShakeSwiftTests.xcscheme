@@ -52,6 +52,16 @@
                ReferencedContainer = "container:UITextFieldShakeSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2C89F2F51BAC758E0071C696"
+               BuildableName = "UITextFieldShakeSwiftUITests.xctest"
+               BlueprintName = "UITextFieldShakeSwiftUITests"
+               ReferencedContainer = "container:UITextFieldShakeSwift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
