@@ -20,6 +20,6 @@ script:
 notifications:
   email: false
 
-before_install:
-  - brew update
-  - brew uninstall xctool && brew install --HEAD xctool
+#before_install:
+#  - brew update
+#  - brew uninstall xctool && brew install --HEAD xctool
