@@ -11,10 +11,10 @@ Translated by myself from Objective-C to Swift and provided to you on this repos
 
 ```
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.4'
+platform :ios, '9.0'
 use_frameworks!
 
-pod 'UITextField-Shake-Swift', '>= 1.0.3'
+pod 'UITextField-Shake-Swift'
 ```
 
 - Then add ```import UITextField_Shake_Swift``` at the top of your Swift class.
