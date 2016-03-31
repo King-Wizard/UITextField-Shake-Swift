@@ -5,7 +5,7 @@ Initially created by Andrea Mazzini (using Objective-C) on 08/02/14: https://git
 
 Translated by myself from Objective-C to Swift and provided to you on this repository.
 
-##Setup with Cocoapods (recommended setup)
+##Setup with CocoaPods (recommended setup)
 
 - Add the instructions below to your Podfile:
 
