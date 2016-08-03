@@ -10,7 +10,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    @IBAction func buttonPressed(sender: UIButton) {
+    @IBAction func buttonPressed(_ sender: UIButton) {
         /*
         // Shake
         self.textField.shake()

@@ -12,9 +12,9 @@
 		2C89F2E51BAC758D0071C696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C89F2E31BAC758D0071C696 /* LaunchScreen.storyboard */; };
 		2C89F2F01BAC758E0071C696 /* UITextFieldShakeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F2EF1BAC758E0071C696 /* UITextFieldShakeSwiftTests.swift */; };
 		2C89F2FB1BAC758E0071C696 /* UITextFieldShakeSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F2FA1BAC758E0071C696 /* UITextFieldShakeSwiftUITests.swift */; };
-		2C89F3441BAC77630071C696 /* UITextField+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F3431BAC77630071C696 /* UITextField+Shake.swift */; settings = {ASSET_TAGS = (); }; };
-		2C89F3471BAC77B70071C696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C89F3451BAC77B70071C696 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		2C89F3481BAC77B70071C696 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F3461BAC77B70071C696 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2C89F3441BAC77630071C696 /* UITextField+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F3431BAC77630071C696 /* UITextField+Shake.swift */; };
+		2C89F3471BAC77B70071C696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C89F3451BAC77B70071C696 /* Main.storyboard */; };
+		2C89F3481BAC77B70071C696 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F3461BAC77B70071C696 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,13 +203,16 @@
 				TargetAttributes = {
 					2C89F2D61BAC758D0071C696 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					2C89F2EA1BAC758E0071C696 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 2C89F2D61BAC758D0071C696;
 					};
 					2C89F2F51BAC758E0071C696 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 2C89F2D61BAC758D0071C696;
 					};
 				};
@@ -407,6 +410,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -419,6 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -430,6 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UITextFieldShakeSwift.app/UITextFieldShakeSwift";
 			};
 			name = Debug;
@@ -442,6 +448,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UITextFieldShakeSwift.app/UITextFieldShakeSwift";
 			};
 			name = Release;
@@ -453,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = UITextFieldShakeSwift;
 				USES_XCTRUNNER = YES;
 			};
@@ -465,6 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = UITextFieldShakeSwift;
 				USES_XCTRUNNER = YES;
 			};
