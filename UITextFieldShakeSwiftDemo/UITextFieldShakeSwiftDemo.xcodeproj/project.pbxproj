@@ -12,9 +12,9 @@
 		2C89F31F1BAC75A60071C696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C89F31D1BAC75A60071C696 /* LaunchScreen.storyboard */; };
 		2C89F32A1BAC75A60071C696 /* UITextFieldShakeSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F3291BAC75A60071C696 /* UITextFieldShakeSwiftDemoTests.swift */; };
 		2C89F3351BAC75A60071C696 /* UITextFieldShakeSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F3341BAC75A60071C696 /* UITextFieldShakeSwiftDemoUITests.swift */; };
-		2CDC38A61BAC7F13008B4F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC38A41BAC7F13008B4F2E /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		2CDC38A71BAC7F13008B4F2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC38A51BAC7F13008B4F2E /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		591AC57424D23114F59A4745 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED03E5FD7E643D9738DE2938 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2CDC38A61BAC7F13008B4F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC38A41BAC7F13008B4F2E /* Main.storyboard */; };
+		2CDC38A71BAC7F13008B4F2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC38A51BAC7F13008B4F2E /* ViewController.swift */; };
+		591AC57424D23114F59A4745 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED03E5FD7E643D9738DE2938 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,13 +219,16 @@
 				TargetAttributes = {
 					2C89F3101BAC75A60071C696 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					2C89F3241BAC75A60071C696 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 2C89F3101BAC75A60071C696;
 					};
 					2C89F32F1BAC75A60071C696 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 2C89F3101BAC75A60071C696;
 					};
 				};
@@ -471,6 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -484,6 +488,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -495,6 +500,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwiftDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UITextFieldShakeSwiftDemo.app/UITextFieldShakeSwiftDemo";
 			};
 			name = Debug;
@@ -507,6 +513,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwiftDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UITextFieldShakeSwiftDemo.app/UITextFieldShakeSwiftDemo";
 			};
 			name = Release;
@@ -518,6 +525,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwiftDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = UITextFieldShakeSwiftDemo;
 				USES_XCTRUNNER = YES;
 			};
@@ -530,6 +538,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myappname.UITextFieldShakeSwiftDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = UITextFieldShakeSwiftDemo;
 				USES_XCTRUNNER = YES;
 			};

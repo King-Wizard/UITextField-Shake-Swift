@@ -18,8 +18,8 @@ import Foundation
  Enum that specifies the direction of the shake
 */
 public enum ShakeDirection : Int {
-    case Horizontal = 0
-    case Vertical = 1
+    case horizontal = 0
+    case vertical = 1
 }
 
 /*
@@ -49,8 +49,8 @@ public extension UITextField {
      :param: times The number of shakes.
      :param: delta The width of the shake.
     */
-    func shake(let times: Int,
-        let withDelta delta: CGFloat) {
+    func shake(_ times: Int,
+        withDelta delta: CGFloat) {
             self.shake(times, withDelta: delta, completion: nil)
     }
     
@@ -63,10 +63,10 @@ public extension UITextField {
      :param: delta The width of the shake.
      :param: handler A block object to be executed when the shake sequence ends.
     */
-    func shake(let times: Int,
-        let withDelta delta: CGFloat,
-        let completion handler: (() -> Void)?) {
-            self._shake(times, direction: 1, currentTimes: 0, withDelta: delta, speed: 0.03, shakeDirection: ShakeDirection.Horizontal, completion: handler)
+    func shake(_ times: Int,
+        withDelta delta: CGFloat,
+        completion handler: (() -> Void)?) {
+            self._shake(times, direction: 1, currentTimes: 0, withDelta: delta, speed: 0.03, shakeDirection: ShakeDirection.horizontal, completion: handler)
     }
     
     /** 
@@ -78,9 +78,9 @@ public extension UITextField {
      :param: delta The width of the shake.
      :param: interval The duration of one shake.
     */
-    func shake(let times: Int,
-        let withDelta delta: CGFloat,
-        let speed interval: NSTimeInterval) {
+    func shake(_ times: Int,
+        withDelta delta: CGFloat,
+        speed interval: TimeInterval) {
             self.shake(times, withDelta: delta, speed: interval, completion: nil)
     }
     
@@ -94,11 +94,11 @@ public extension UITextField {
      :param: interval The duration of one shake.
      :param: handler A block object to be executed when the shake sequence ends.
     */
-    func shake(let times: Int,
-        let withDelta delta: CGFloat,
-        let speed interval: NSTimeInterval,
-        let completion handler: (() -> Void)?) {
-            self._shake(times, direction: 1, currentTimes: 0, withDelta: delta, speed: interval, shakeDirection: ShakeDirection.Horizontal, completion: handler)
+    func shake(_ times: Int,
+        withDelta delta: CGFloat,
+        speed interval: TimeInterval,
+        completion handler: (() -> Void)?) {
+            self._shake(times, direction: 1, currentTimes: 0, withDelta: delta, speed: interval, shakeDirection: ShakeDirection.horizontal, completion: handler)
     }
     
     /** 
@@ -111,10 +111,10 @@ public extension UITextField {
      :param: interval The duration of one shake.
      :param: direction of the shake.
     */
-    func shake(let times: Int,
-        let withDelta delta: CGFloat,
-        let speed interval: NSTimeInterval,
-        let shakeDirection: ShakeDirection) {
+    func shake(_ times: Int,
+        withDelta delta: CGFloat,
+        speed interval: TimeInterval,
+        shakeDirection: ShakeDirection) {
             self.shake(times, withDelta: delta, speed: interval, shakeDirection: shakeDirection, completion: nil)
     }
     
@@ -129,36 +129,36 @@ public extension UITextField {
      :param: direction of the shake.
      :param: handler A block object to be executed when the shake sequence ends.
     */
-    func shake(let times: Int,
-        let withDelta delta: CGFloat,
-        let speed interval: NSTimeInterval,
-        let shakeDirection: ShakeDirection,
-        let completion handler: (() -> Void)?) {
+    func shake(_ times: Int,
+        withDelta delta: CGFloat,
+        speed interval: TimeInterval,
+        shakeDirection: ShakeDirection,
+        completion handler: (() -> Void)?) {
             self._shake(times, direction: 1, currentTimes: 0, withDelta: delta, speed: interval, shakeDirection: shakeDirection, completion: handler)
     }
     
     
-    private func _shake(let times: Int,
-        let direction: Int,
-        let currentTimes current: Int,
-        let withDelta delta: CGFloat,
-        let speed interval: NSTimeInterval,
-        let shakeDirection: ShakeDirection,
-        let completion handler: (() -> Void)?) {
+    private func _shake(_ times: Int,
+        direction: Int,
+        currentTimes current: Int,
+        withDelta delta: CGFloat,
+        speed interval: TimeInterval,
+        shakeDirection: ShakeDirection,
+        completion handler: (() -> Void)?) {
             
-            UIView.animateWithDuration(interval, animations: {
+            UIView.animate(withDuration: interval, animations: {
                 () -> Void in
-                self.transform = (shakeDirection == ShakeDirection.Horizontal) ?
-                    CGAffineTransformMakeTranslation(delta * CGFloat(direction), 0) :
-                    CGAffineTransformMakeTranslation(0, delta * CGFloat(direction))
+                self.transform = (shakeDirection == ShakeDirection.horizontal) ?
+                    CGAffineTransform(translationX: delta * CGFloat(direction), y: 0) :
+                    CGAffineTransform(translationX: 0, y: delta * CGFloat(direction))
                 }, completion: {
-                    (let finished: Bool) in
+                    (finished: Bool) in
                     if current >= times {
-                        UIView.animateWithDuration(interval, animations: {
+                        UIView.animate(withDuration: interval, animations: {
                             () -> Void in
-                            self.transform = CGAffineTransformIdentity
+                            self.transform = CGAffineTransform.identity
                             }, completion: {
-                                (let finished: Bool) in
+                                (finished: Bool) in
                                 if let handler = handler {
                                     handler()
                                 }
